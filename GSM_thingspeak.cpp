@@ -78,8 +78,7 @@ void GSM_Thingspeak::end_connection(){
   delay(100);
   ShowSerialData();
 }
-void GSM_Thingspeak::ShowSerialData()
-{
+void GSM_Thingspeak::ShowSerialData(){
   while(SIM800.available()!=0)
     Serial.write(SIM800.read());
 }
