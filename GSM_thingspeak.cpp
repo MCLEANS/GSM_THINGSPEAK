@@ -61,7 +61,7 @@ void GSM_Thingspeak::connect_to_server(){
 }
 
 void GSM_Thingspeak::Field1(int data){
-   String str = "GET http://api.thingspeak.com/update?api_key=60O6PXH2VGJ3KCDO&field1=" + String (data);
+   String str = "GET http://api.thingspeak.com/update?api_key=xxxxxxxxxxxxx&field1=" + String (data);
   SIM800.println(str);//begin send data to remote server
 
   delay(2000);
